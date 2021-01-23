@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+    deemix:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./Downloads:/app/downloads
+        ports:
+            - 6595:6595
